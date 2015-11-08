@@ -1,0 +1,19 @@
+{
+  "applicationName": "Virtual Fron Panel - Gating Controller",
+  "appShortName": "VFP",
+  "hostname": "localhost",
+  "port": 8080,
+  "tcpLongWaitMs": 1000,
+  "tcpShortWaitMs": 10,
+  "commands": [
+    "ID?;",
+    "Reset;",
+    "Clear;",
+    "Error?;",
+    "ErrorAll?",
+    "Pulse:Width",
+    "Pulse:Delay",
+    "MOD",
+    "EnableSynth"
+  ]
+}

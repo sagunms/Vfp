@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/root">
+        <file>Resources/Images/laboratory.png</file>
+    </qresource>
+    <qresource prefix="/json">
+        <file>settings.json</file>
+    </qresource>
+</RCC>
