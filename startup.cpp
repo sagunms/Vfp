@@ -4,13 +4,17 @@
 #include "utils.h"
 #include "Model/settings.h"
 #include "Model/provider.h"
+#include "Model/instsocket.h"
+#include "Model/instrument.h"
 
 namespace Sagun
 {
     Startup::Startup() :
         QObject(nullptr),
         m_setupTab(*new SetupTab(nullptr)),
-        m_mainView(*new MainView(nullptr, m_setupTab))
+        m_mainView(*new MainView(nullptr, m_setupTab)),
+        m_instrument(new Instrument(this,
+                                    *new InstSocket(this)))
     {
 //        Settings my_settings(this, "settings.json");
         Settings& my_settings = Provider::GetSettingsAsSingleton();

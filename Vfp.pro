@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     utils.cpp \
     Model/settings.cpp \
     Model/provider.cpp \
-    Model/instsocket.cpp
+    Model/instsocket.cpp \
+    Model/instrument.cpp
 
 HEADERS  += View/mainview.h \
     View/setuptab.h \
@@ -27,7 +28,8 @@ HEADERS  += View/mainview.h \
     utils.h \
     Model/settings.h \
     Model/provider.h \
-    Model/instsocket.h
+    Model/instsocket.h \
+    Model/instrument.h
 
 FORMS    += View/mainview.ui \
     View/setuptab.ui

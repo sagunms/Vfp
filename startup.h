@@ -5,6 +5,7 @@ namespace Sagun{
 
     class SetupTab;
     class MainView;
+    class Instrument;
 
     class Startup final : public QObject
     {
@@ -17,6 +18,7 @@ namespace Sagun{
     private:
         SetupTab& m_setupTab;
         MainView& m_mainView;
+        Instrument* m_instrument;
 
         explicit Startup(const Startup& rhs) = delete;
         Startup& operator= (const Startup& rhs) = delete;
